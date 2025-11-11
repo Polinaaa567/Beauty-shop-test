@@ -1,41 +1,16 @@
+import 'package:beauty_store/core/layout/main_layout.dart';
 import 'package:beauty_store/features/personal_care/widgets/skincare_consultation_card.dart';
-import 'package:beauty_store/shared/widgets/custom_bottom_nav_bar.dart';
+
 import 'package:flutter/material.dart';
 
-class CatalogPage extends StatefulWidget {
+class CatalogPage extends StatelessWidget {
   const CatalogPage({super.key});
 
   @override
-  State<StatefulWidget> createState() => _CatalogPageState();
-}
-
-class _CatalogPageState extends State<CatalogPage> {
-  int _currentNavIndex = 1;
-
-  void _onNavItemTapped(int index) {
-    if (index == _currentNavIndex) return;
-
-    setState(() {
-      _currentNavIndex = index;
-    });
-
-    switch (index) {
-      case 0:
-        Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
-        break;
-      
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      bottomNavigationBar: CustomBottomNavBar(
-        currentIndex: _currentNavIndex,
-        onTap: _onNavItemTapped,
-      ),
-      body: SingleChildScrollView(
+    return MainLayout(
+      currentIndex: 1,
+      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -109,7 +84,7 @@ class _CatalogPageState extends State<CatalogPage> {
   }) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 21.5),
-      child: GestureDetector(
+      child: InkWell(
         onTap: onTap,
         child: SizedBox(
           width: double.infinity,

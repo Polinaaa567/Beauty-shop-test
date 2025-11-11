@@ -1,83 +1,26 @@
-import 'package:beauty_store/shared/widgets/custom_bottom_nav_bar.dart';
+import 'package:beauty_store/core/layout/main_layout.dart';
+import 'package:beauty_store/shared/widgets/headers_button_back_title.dart';
+
 import 'package:flutter/material.dart';
 
-class SkinTypePage extends StatefulWidget {
+class SkinTypePage extends StatelessWidget {
   const SkinTypePage({super.key});
 
   @override
-  State<StatefulWidget> createState() => _SkinTypePageState();
-}
-
-class _SkinTypePageState extends State<SkinTypePage> {
-  int _currentNavIndex = 1;
-
-  void _onNavItemTapped(int index) {
-    if (index == _currentNavIndex) return;
-
-    setState(() {
-      _currentNavIndex = index;
-    });
-
-    switch (index) {
-      case 0:
-        Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
-        break;
-      case 1:
-        Navigator.pushNamedAndRemoveUntil(
-          context,
-          '/catalog',
-          (route) => false,
-        );
-        break;
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      bottomNavigationBar: CustomBottomNavBar(
-        currentIndex: _currentNavIndex,
-        onTap: _onNavItemTapped,
-      ),
-      backgroundColor: Colors.white,
-      body: SingleChildScrollView(
+    return MainLayout(
+      currentIndex: 1,
+      child: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(top: 63, left: 16, right: 16),
           child: Column(
             children: [
-              _buildSkinTypeTitle(context),
+              HeadersButtonBackTitle(title: 'По типу кожи'),
               _buildMenuSection(context),
             ],
           ),
         ),
       ),
-    );
-  }
-
-  Widget _buildSkinTypeTitle(BuildContext context) {
-    return Row(
-      children: [
-        GestureDetector(
-          onTap: () => Navigator.pushNamedAndRemoveUntil(
-            context,
-            '/catalog',
-            (route) => false,
-          ),
-          child: Icon(Icons.chevron_left_sharp, size: 30),
-        ),
-        Expanded(
-          child: Center(
-            child: Text(
-              'По типу кожи',
-              style: TextStyle(
-                fontFamily: 'Raleway',
-                fontSize: 20,
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-          ),
-        ),
-      ],
     );
   }
 
@@ -103,7 +46,7 @@ class _SkinTypePageState extends State<SkinTypePage> {
   Widget _buildMenuItem({required String title, Function()? onTap}) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 28),
-      child: GestureDetector(
+      child: InkWell(
         onTap: onTap,
         child: SizedBox(
           width: double.infinity,

@@ -30,16 +30,18 @@ class SkincareQuizSection extends StatelessWidget {
   }
 
   Widget _buildBackground() {
-    return Transform.flip(
-      flipX: true,
-      flipY: false,
-      child: Opacity(
-        opacity: 0.23,
-        child: Image.asset(
-          'assets/images/background/background_test.png',
-          width: 458,
-          height: 248,
-          fit: BoxFit.cover,
+    return Positioned.fill(
+      child: Transform.flip(
+        flipX: true,
+        flipY: false,
+        child: Opacity(
+          opacity: 0.23,
+          child: Image.asset(
+            'assets/images/background/background_test.png',
+            width: 458,
+            height: 248,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
     );

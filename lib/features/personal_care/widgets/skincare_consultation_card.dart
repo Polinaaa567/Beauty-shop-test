@@ -22,7 +22,7 @@ class SkincareConsultationCard extends StatelessWidget {
   }
 
   Widget _buildBackground() {
-    return Positioned(
+    return Positioned.fill(
       top: -40,
       left: -6,
       child: Transform.flip(
@@ -42,63 +42,63 @@ class SkincareConsultationCard extends StatelessWidget {
 
   Widget _buildBlurredCircle() {
     return Positioned(
-            bottom: 6,
-            top: 0,
-            left: 24,
-            child: ClipOval(
-              child: Container(
-                width: 157,
-                height: 157,
-                color: Colors.white.withOpacity(0.1),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 10, sigmaY: 5),
-                  child: Container(color: Colors.transparent),
-                ),
-              ),
-            ),
-          );
+      bottom: 6,
+      top: 0,
+      left: 24,
+      child: ClipOval(
+        child: Container(
+          width: 157,
+          height: 157,
+          color: Colors.white.withOpacity(0.1),
+          child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 5),
+            child: Container(color: Colors.transparent),
+          ),
+        ),
+      ),
+    );
   }
 
   Widget _buildContent(BuildContext context) {
     return Stack(
-        children: [
-           Positioned(
-            top: 24,
-            child: Container(
-              padding: EdgeInsets.only(left: 24),
-              width: MediaQuery.of(context).size.width * 0.9,
-              child: Text(
-                'Составим схему идеального домашнего ухода',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.w700,
-                ),
-                textDirection: TextDirection.ltr,
-                softWrap: true,
-                overflow: TextOverflow.visible,
-                textAlign: TextAlign.left,
+      children: [
+        Positioned(
+          top: 24,
+          child: Container(
+            padding: EdgeInsets.only(left: 24),
+            width: MediaQuery.of(context).size.width * 0.9,
+            child: Text(
+              'Составим схему идеального домашнего ухода',
+              style: TextStyle(
+                fontSize: 16,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.w700,
               ),
+              textDirection: TextDirection.ltr,
+              softWrap: true,
+              overflow: TextOverflow.visible,
+              textAlign: TextAlign.left,
             ),
           ),
-          Positioned(
-            top: 72,
-            child: Container(
-              padding: EdgeInsets.only(left: 24),
+        ),
+        Positioned(
+          top: 72,
+          child: Container(
+            padding: EdgeInsets.only(left: 24),
 
-              width: MediaQuery.of(context).size.width * 0.9,
-              child: Text(
-                '10 вопросов о вашей коже',
-                style: TextStyle(
-                  fontSize: 14,
-                  fontFamily: 'Raleway',
-                  fontWeight: FontWeight.w500,
-                ),
+            width: MediaQuery.of(context).size.width * 0.9,
+            child: Text(
+              '10 вопросов о вашей коже',
+              style: TextStyle(
+                fontSize: 14,
+                fontFamily: 'Raleway',
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
-          const Positioned(top: 105, child: ButtonQuiz()),
-        ],
-      );
+        ),
+        const Positioned(top: 105, child: ButtonQuiz()),
+      ],
+    );
   }
 }
