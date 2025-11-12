@@ -12,7 +12,7 @@ class SkinTypePage extends StatelessWidget {
       currentIndex: 1,
       child: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top: 63, left: 16, right: 16),
+          margin: EdgeInsets.only(top: 63.0, left: 16.0, right: 16.0),
           child: Column(
             children: [
               HeadersButtonBackTitle(title: 'По типу кожи'),
@@ -26,7 +26,7 @@ class SkinTypePage extends StatelessWidget {
 
   Widget _buildMenuSection(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 28),
+      margin: EdgeInsets.only(top: 28.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -45,7 +45,7 @@ class SkinTypePage extends StatelessWidget {
 
   Widget _buildMenuItem({required String title, Function()? onTap}) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 28),
+      padding: const EdgeInsets.only(bottom: 28.0),
       child: InkWell(
         onTap: onTap,
         child: SizedBox(
@@ -55,7 +55,7 @@ class SkinTypePage extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 18.0,
                   fontFamily: 'Raleway',
                   fontWeight: FontWeight.w600,
                 ),

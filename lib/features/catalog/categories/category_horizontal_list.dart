@@ -8,7 +8,7 @@ class CategoryHorizontalList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 25, left: 16),
+      padding: const EdgeInsets.only(top: 25.0, left: 16.0),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -19,12 +19,12 @@ class CategoryHorizontalList extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    top: 15,
-                    left: -5,
+                    top: 15.0,
+                    left: -5.0,
                     child: Image.asset(
                       'assets/images/categories/set1.png',
                       width: 52.8,
-                      height: 72,
+                      height: 72.0,
                     ),
                   ),
                   Positioned(
@@ -48,21 +48,21 @@ class CategoryHorizontalList extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    top: 4,
-                    left: -5,
+                    top: 4.0,
+                    left: -5.0,
                     child: Image.asset(
                       'assets/images/categories/for_eyes.png',
-                      width: 106,
-                      height: 145,
+                      width: 106.0,
+                      height: 145.0,
                     ),
                   ),
                   Positioned(
-                    top: -90,
-                    left: -46,
+                    top: -90.0,
+                    left: -46.0,
                     child: Image.asset(
                       'assets/images/categories/for_eyes.png',
-                      width: 106,
-                      height: 145,
+                      width: 106.0,
+                      height: 145.0,
                     ),
                   ),
                 ],

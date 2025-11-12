@@ -21,98 +21,55 @@ class CustomBottomNavBar extends StatelessWidget {
         currentIndex: currentIndex,
         onTap: onTap,
         type: BottomNavigationBarType.fixed,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: const Color(0xff70757F),
         selectedLabelStyle: const TextStyle(
-          fontSize: 10,
+          color: Colors.black,
+          fontSize: 10.0,
           fontFamily: 'Raleway',
           fontWeight: FontWeight.w500,
         ),
         unselectedLabelStyle: const TextStyle(
-          fontSize: 10,
+          color: Color(0xff70757F),
+          fontSize: 10.0,
           fontFamily: 'Raleway',
           fontWeight: FontWeight.w500,
         ),
 
         items: [
-          BottomNavigationBarItem(
-            icon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_home.png",
-                width: 16,
-                color: Color(0xff70757F),
-              ),
-            ),
-            activeIcon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_home.png",
-                width: 16,
-                color: Colors.black,
-              ),
-            ),
+          _buildBottomNavigationBarItem(
+            assetUrl: "assets/images/icons/icon_home.png",
             label: "Главная",
           ),
-          BottomNavigationBarItem(
-            icon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_search.png",
-                width: 16,
-                color: Color(0xff70757F),
-              ),
-            ),
-            activeIcon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_search.png",
-                width: 16,
-                color: Colors.black,
-              ),
-            ),
+          _buildBottomNavigationBarItem(
+            assetUrl: "assets/images/icons/icon_search.png",
             label: "Каталог",
           ),
-          BottomNavigationBarItem(
-            icon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_shop.png",
-                width: 16,
-                color: Color(0xff70757F),
-              ),
-            ),
-            activeIcon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_shop.png",
-                width: 16,
-                color: Colors.black,
-              ),
-            ),
+          _buildBottomNavigationBarItem(
+            assetUrl: "assets/images/icons/icon_shop.png",
             label: "Корзина",
           ),
-          BottomNavigationBarItem(
-            icon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_profile.png",
-                width: 16,
-                color: Color(0xff70757F),
-              ),
-            ),
-            activeIcon: Padding(
-              padding: EdgeInsets.only(bottom: 5),
-              child: Image.asset(
-                "assets/images/icons/icon_profile.png",
-                width: 16,
-                color: Colors.black,
-              ),
-            ),
+          _buildBottomNavigationBarItem(
+            assetUrl: "assets/images/icons/icon_profile.png",
             label: "Профиль",
           ),
         ],
       ),
+    );
+  }
+
+  BottomNavigationBarItem _buildBottomNavigationBarItem({
+    required String label,
+    required String assetUrl,
+  }) {
+    return BottomNavigationBarItem(
+      icon: Padding(
+        padding: EdgeInsets.only(bottom: 5.0),
+        child: Image.asset(assetUrl, width: 16.0, color: Color(0xff70757F)),
+      ),
+      activeIcon: Padding(
+        padding: EdgeInsets.only(bottom: 5.0),
+        child: Image.asset(assetUrl, width: 16.0, color: Colors.black),
+      ),
+      label: label,
     );
   }
 }

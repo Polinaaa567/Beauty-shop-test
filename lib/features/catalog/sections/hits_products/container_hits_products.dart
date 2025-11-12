@@ -20,7 +20,7 @@ class BestSellersSection extends StatelessWidget {
 
   Widget _buildTitleCatalog() {
     return const Padding(
-      padding: EdgeInsets.only(top: 15, left: 16),
+      padding: EdgeInsets.only(top: 15.0, left: 16.0),
       child: SectionHeaderTitle(
         title: 'Хиты',
         colors: [Color(0xffF86614), Color(0xffFCBC5C)],
@@ -30,7 +30,7 @@ class BestSellersSection extends StatelessWidget {
 
   Widget _buildRowItemsCatalog() {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, top: 575 - 40 - 511, bottom: 51),
+      padding: const EdgeInsets.only(left: 16.0, top: 575.0 - 40.0 - 511.0, bottom: 51.0),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -57,11 +57,11 @@ class BestSellersSection extends StatelessWidget {
                 price: '1595 ₽',
                 assetUrl: 'assets/images/product/hit_mask.png',
               ),
-              width: 111,
-              height: 151,
-              top: 16,
+              width: 111.0,
+              height: 151.0,
+              top: 16.0,
               left: 27.67,
-              topShadow: 20,
+              topShadow: 20.0,
               leftShadow: 32.68,
             ),
             ProductCard(
@@ -71,11 +71,11 @@ class BestSellersSection extends StatelessWidget {
                 price: '3095 ₽',
                 assetUrl: 'assets/images/product/stock_toner.png',
               ),
-              width: 125,
-              height: 172,
-              top: 6,
+              width: 125.0,
+              height: 172.0,
+              top: 6.0,
               left: 14.84,
-              topShadow: 9,
+              topShadow: 9.0,
               leftShadow: 21.84,
             ),
           ],

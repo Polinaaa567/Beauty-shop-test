@@ -54,11 +54,6 @@ flutter:
   fonts: 
     - family: VelaSans
       fonts: 
-        - asset: assets/fonts/velasans/VelaSans-Bold.ttf
-        - asset: assets/fonts/velasans/VelaSans-ExtraBold.ttf
-        - asset: assets/fonts/velasans/VelaSans-ExtraLight.ttf
-        - asset: assets/fonts/velasans/VelaSans-GX.ttf
-        - asset: assets/fonts/velasans/VelaSans-Light.ttf
         - asset: assets/fonts/velasans/VelaSans-Regular.ttf
           weight: 400
         - asset: assets/fonts/velasans/VelaSans-SemiBold.ttf

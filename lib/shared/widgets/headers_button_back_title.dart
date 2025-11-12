@@ -8,14 +8,14 @@ class HeadersButtonBackTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 40,
+      height: 40.0,
       child: Row(
         children: [
           Container(
             decoration: BoxDecoration(shape: BoxShape.circle),
             child: InkWell(
               onTap: () => Navigator.pop(context),
-              child: Icon(Icons.chevron_left_rounded, size: 30),
+              child: Icon(Icons.chevron_left_rounded, size: 30.0),
             ),
           ),
           Expanded(
@@ -24,7 +24,7 @@ class HeadersButtonBackTitle extends StatelessWidget {
                 title,
                 style: TextStyle(
                   fontFamily: 'Raleway',
-                  fontSize: 20,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.w700,
                 ),
               ),

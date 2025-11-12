@@ -1,4 +1,5 @@
 import 'package:beauty_store/core/entities/headers_info.dart';
+
 import 'package:flutter/material.dart';
 
 class ProductInfoHeaderSection extends StatelessWidget {
@@ -16,8 +17,8 @@ class ProductInfoHeaderSection extends StatelessWidget {
     final currentItem = headersInfo[currentPage];
 
     return Container(
-      margin: EdgeInsets.only(top: 193),
-      padding: EdgeInsets.only(top: 52, left: 24, right: 12),
+      margin: EdgeInsets.only(top: 193.0),
+      padding: EdgeInsets.only(top: 52.0, left: 24.0, right: 12.0),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
@@ -47,7 +48,7 @@ class ProductInfoHeaderSection extends StatelessWidget {
                   Text(
                     currentItem.type,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 16.0,
                       fontFamily: 'VelaSans',
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
@@ -56,7 +57,7 @@ class ProductInfoHeaderSection extends StatelessWidget {
                   Text(
                     currentItem.description,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 16.0,
                       fontFamily: 'VelaSans',
                       fontWeight: FontWeight.w400,
                       color: Colors.white,
@@ -66,11 +67,11 @@ class ProductInfoHeaderSection extends StatelessWidget {
               ),
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(3),
-                  border: BoxBorder.all(color: Colors.white, width: 1),
+                  borderRadius: BorderRadius.circular(3.0),
+                  border: BoxBorder.all(color: Colors.white, width: 1.0),
                 ),
-                width: 120,
-                height: 36,
+                width: 120.0,
+                height: 36.0,
                 child: Center(
                   child: Text(
                     currentItem.buttonText,
@@ -78,7 +79,7 @@ class ProductInfoHeaderSection extends StatelessWidget {
                       color: Colors.white,
                       fontFamily: 'Raleway',
                       fontWeight: FontWeight.w600,
-                      fontSize: 12,
+                      fontSize: 12.0,
                     ),
                   ),
                 ),

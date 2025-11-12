@@ -30,17 +30,17 @@ class ProductCard extends StatelessWidget {
     return Container(
       width: 162.17,
       height: 278.47,
-      padding: EdgeInsets.only(right: 12),
+      padding: EdgeInsets.only(right: 12.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color(0xffF4F4F4),
-              borderRadius: BorderRadius.circular(15),
+              color: const Color(0xffF4F4F4),
+              borderRadius: BorderRadius.circular(15.0),
             ),
-            width: 161.00833129882812,
-            height: 187.64999389648438,
+            width: 161.01,
+            height: 187.65,
             child: Stack(
               children: [
                 Positioned(
@@ -50,8 +50,8 @@ class ProductCard extends StatelessWidget {
                     opacity: 0.3,
                     child: ImageFiltered(
                       imageFilter: ImageFilter.blur(
-                        sigmaX: 3.47 / 2,
-                        sigmaY: 3.47 / 2,
+                        sigmaX: 3.47 / 2.0,
+                        sigmaY: 3.47 / 2.0,
                       ),
                       child: Image.asset(
                         productItem.shadow != null
@@ -77,13 +77,13 @@ class ProductCard extends StatelessWidget {
                 ),
                 if (decoration != null)
                   Positioned(
-                    top: 41,
-                    left: 122,
+                    top: 41.0,
+                    left: 122.0,
                     child: Text(
                       decoration ?? "",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontFamily: 'Montserrat',
-                        fontSize: 16,
+                        fontSize: 16.0,
                         fontWeight: FontWeight.w600,
                         color: Color(0xffF47DDA),
                       ),
@@ -91,78 +91,75 @@ class ProductCard extends StatelessWidget {
                   ),
                 if (productItem.stock != null)
                   Positioned(
-                    top: 8,
-                    left: 120,
+                    top: 8.0,
+                    left: 120.0,
                     child: Image.asset(
                       'assets/images/icons/icon_star.png',
-                      width: 25,
-                      height: 25,
+                      width: 25.0,
+                      height: 25.0,
                     ),
                   ),
               ],
             ),
           ),
-
           Padding(
-            padding: EdgeInsets.only(top: 4),
-            child: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    productItem.type,
-                    style: TextStyle(
-                      fontSize: 11.58,
-                      fontFamily: 'Raleway',
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xff000000).withOpacity(0.8),
-                    ),
+            padding: const EdgeInsets.only(top: 4.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  productItem.type,
+                  style: TextStyle(
+                    fontSize: 11.58,
+                    fontFamily: 'Raleway',
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xff000000).withOpacity(0.8),
                   ),
-                  SizedBox(height: 2),
-                  Text(
-                    productItem.title,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontFamily: 'Raleway',
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xff000000),
-                    ),
+                ),
+                SizedBox(height: 2.0),
+                Text(
+                  productItem.title,
+                  style: const TextStyle(
+                    fontSize: 14.0,
+                    fontFamily: 'Raleway',
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xff000000),
                   ),
-                  SizedBox(height: 3),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      if (productItem.stock != null)
-                        Container(
-                          padding: EdgeInsets.only(right: 6),
-                          child: Text(
-                            productItem.stock ?? "",
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xff000000),
-                            ),
+                ),
+                SizedBox(height: 3.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    if (productItem.stock != null)
+                      Container(
+                        padding: const EdgeInsets.only(right: 6.0),
+                        child: Text(
+                          productItem.stock ?? "",
+                          style: const TextStyle(
+                            fontSize: 16.0,
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xff000000),
                           ),
                         ),
-                      Text(
-                        productItem.price,
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontFamily: 'Montserrat',
-                          fontWeight: FontWeight.w600,
-                          color: productItem.stock != null
-                              ? Color(0xff000000).withOpacity(0.2)
-                              : Color(0xff000000),
-                          decoration: productItem.stock != null
-                              ? TextDecoration.lineThrough
-                              : null,
-                        ),
                       ),
-                    ],
-                  ),
-                ],
-              ),
+                    Text(
+                      productItem.price,
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        fontFamily: 'Montserrat',
+                        fontWeight: FontWeight.w600,
+                        color: productItem.stock != null
+                            ? const Color(0xff000000).withOpacity(0.2)
+                            : const Color(0xff000000),
+                        decoration: productItem.stock != null
+                            ? TextDecoration.lineThrough
+                            : null,
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         ],

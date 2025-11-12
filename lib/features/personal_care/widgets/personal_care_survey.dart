@@ -11,11 +11,11 @@ class SkincareQuizSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 894 - 575 - 278.47),
+      margin: const EdgeInsets.only(top: 894.0 - 575.0 - 278.47),
       child: Container(
-        padding: const EdgeInsets.only(left: 22),
+        padding: const EdgeInsets.only(left: 22.0),
         color: const Color(0xffF4F4F4),
-        height: 250,
+        height: 250.0,
         child: Stack(
           children: [
             _buildBackground(),
@@ -38,8 +38,8 @@ class SkincareQuizSection extends StatelessWidget {
           opacity: 0.23,
           child: Image.asset(
             'assets/images/background/background_test.png',
-            width: 458,
-            height: 248,
+            width: 458.0,
+            height: 248.0,
             fit: BoxFit.cover,
           ),
         ),
@@ -49,15 +49,15 @@ class SkincareQuizSection extends StatelessWidget {
 
   Widget _buildBlurredCircle() {
     return Positioned(
-      top: 189,
-      left: 44,
+      top: 189.0,
+      left: 44.0,
       child: ClipOval(
         child: Container(
-          width: 157,
-          height: 157,
+          width: 157.0,
+          height: 157.0,
           color: Colors.white.withOpacity(0.1),
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 5),
+            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 5.0),
             child: Container(color: Colors.transparent),
           ),
         ),
@@ -67,11 +67,11 @@ class SkincareQuizSection extends StatelessWidget {
 
   Widget _buildTitle() {
     return const Positioned(
-      top: 26,
+      top: 26.0,
       child: Text(
         "Моя схема домашнего ухода",
         style: TextStyle(
-          fontSize: 16,
+          fontSize: 16.0,
           fontFamily: 'Raleway',
           fontWeight: FontWeight.w700,
         ),
@@ -81,8 +81,8 @@ class SkincareQuizSection extends StatelessWidget {
 
   Widget _buildRoutineList() {
     return Positioned(
-      top: 65,
-      left: 0,
+      top: 65.0,
+      left: 0.0,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -91,49 +91,49 @@ class SkincareQuizSection extends StatelessWidget {
               title: 'Демакияж',
               asset: Image.asset(
                 'assets/images/product/remove_make_up.png',
-                width: 99,
-                height: 163,
+                width: 99.0,
+                height: 163.0,
                 fit: BoxFit.cover,
                 color: Colors.black,
               ),
-              top: 10,
-              left: -9,
+              top: 10.0,
+              left: -9.0,
             ),
             CurrentCareRoutine(
               title: 'Очищение',
               asset: Image.asset(
                 'assets/images/product/cleansing.png',
-                width: 113,
-                height: 154,
+                width: 113.0,
+                height: 154.0,
                 fit: BoxFit.cover,
                 color: Colors.black,
               ),
-              top: 11,
-              left: -16,
+              top: 11.0,
+              left: -16.0,
             ),
             CurrentCareRoutine(
               title: 'Сыворотка',
               asset: Image.asset(
                 'assets/images/product/serum.png',
                 width: 68.82,
-                height: 94,
+                height: 94.0,
                 fit: BoxFit.cover,
                 color: Colors.black,
               ),
-              top: 13,
-              left: 6,
+              top: 13.0,
+              left: 6.0,
             ),
             CurrentCareRoutine(
               title: 'Дневной крем',
               asset: Image.asset(
                 'assets/images/product/day_cream.png',
-                width: 54,
-                height: 66,
+                width: 54.0,
+                height: 66.0,
                 fit: BoxFit.cover,
                 color: Colors.black,
               ),
-              top: 9,
-              left: 13,
+              top: 9.0,
+              left: 13.0,
             ),
           ],
         ),
@@ -143,9 +143,9 @@ class SkincareQuizSection extends StatelessWidget {
 
   Widget _buildTestSection() {
     return Positioned(
-      top: 193,
-      left: 0,
-      right: 0,
+      top: 193.0,
+      left: 0.0,
+      right: 0.0,
       child: Row(
         children: [
           const Expanded(
@@ -153,7 +153,7 @@ class SkincareQuizSection extends StatelessWidget {
               "Ответьте на 10 вопросов, \nи мы подберем нужный уход ",
               style: TextStyle(
                 fontFamily: 'Raleway',
-                fontSize: 13,
+                fontSize: 13.0,
                 fontWeight: FontWeight.w500,
               ),
             ),

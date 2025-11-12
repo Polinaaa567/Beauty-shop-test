@@ -10,15 +10,15 @@ class ProductFilterCard extends StatelessWidget {
     return Container(
       height: 60,
       decoration: BoxDecoration(
-        border: BoxBorder.all(color: Colors.black.withOpacity(.1)),
-        borderRadius: BorderRadius.circular(9),
+        border: BoxBorder.all(color: Colors.black.withOpacity(0.1)),
+        borderRadius: BorderRadius.circular(9.0),
       ),
       child: Center(
         child: Text(
           title,
           style: const TextStyle(
             fontFamily: 'Raleway',
-            fontSize: 14,
+            fontSize: 14.0,
             fontWeight: FontWeight.w500,
             color: Color(0xff080808),
           ),

@@ -8,8 +8,8 @@ class SkincareConsultationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 51 - 21.5),
-      height: 169,
+      margin: const EdgeInsets.only(top: 51.0 - 21.5),
+      height: 169.0,
       color: const Color(0xffF4F4F4),
       child: Stack(
         children: [
@@ -23,8 +23,8 @@ class SkincareConsultationCard extends StatelessWidget {
 
   Widget _buildBackground() {
     return Positioned.fill(
-      top: -40,
-      left: -6,
+      top: -40.0,
+      left: -6.0,
       child: Transform.flip(
         flipX: true,
         flipY: false,
@@ -32,7 +32,7 @@ class SkincareConsultationCard extends StatelessWidget {
           opacity: 0.41,
           child: Image.asset(
             'assets/images/background/background_test.png',
-            height: 234,
+            height: 234.0,
             fit: BoxFit.cover,
           ),
         ),
@@ -42,16 +42,16 @@ class SkincareConsultationCard extends StatelessWidget {
 
   Widget _buildBlurredCircle() {
     return Positioned(
-      bottom: 6,
-      top: 0,
-      left: 24,
+      bottom: 6.0,
+      top: 0.0,
+      left: 24.0,
       child: ClipOval(
         child: Container(
-          width: 157,
-          height: 157,
+          width: 157.0,
+          height: 157.0,
           color: Colors.white.withOpacity(0.1),
           child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 5),
+            filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 5.0),
             child: Container(color: Colors.transparent),
           ),
         ),
@@ -65,12 +65,12 @@ class SkincareConsultationCard extends StatelessWidget {
         Positioned(
           top: 24,
           child: Container(
-            padding: EdgeInsets.only(left: 24),
+            padding: EdgeInsets.only(left: 24.0),
             width: MediaQuery.of(context).size.width * 0.9,
             child: Text(
               'Составим схему идеального домашнего ухода',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 16.0,
                 fontFamily: 'Raleway',
                 fontWeight: FontWeight.w700,
               ),
@@ -84,20 +84,20 @@ class SkincareConsultationCard extends StatelessWidget {
         Positioned(
           top: 72,
           child: Container(
-            padding: EdgeInsets.only(left: 24),
+            padding: EdgeInsets.only(left: 24.0),
 
             width: MediaQuery.of(context).size.width * 0.9,
             child: Text(
               '10 вопросов о вашей коже',
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 14.0,
                 fontFamily: 'Raleway',
                 fontWeight: FontWeight.w500,
               ),
             ),
           ),
         ),
-        const Positioned(top: 105, child: ButtonQuiz()),
+        const Positioned(top: 105.0, child: ButtonQuiz()),
       ],
     );
   }

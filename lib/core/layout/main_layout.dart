@@ -38,7 +38,6 @@ class _MainLayoutState extends State<MainLayout> {
         Navigator.pushNamed(
           context,
           '/catalog',
-          // (route) => false,
         );
         break;
     }
@@ -47,7 +46,7 @@ class _MainLayoutState extends State<MainLayout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor:  Colors.white,
       body: widget.child,
       bottomNavigationBar: CustomBottomNavBar(
         currentIndex: _currentNavIndex,

@@ -17,29 +17,29 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 12),
+      padding: const EdgeInsets.only(right: 12.0),
       child: SizedBox(
-        width: 72,
-        height: 95,
+        width: 72.0,
+        height: 95.0,
         child: Column(
           children: [
             Container(
-              height: 72,
-              width: 72,
+              height: 72.0,
+              width: 72.0,
               decoration: BoxDecoration(
                 color: backgroundColor,
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(12.0),
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(12),
+                borderRadius: BorderRadius.circular(12.0),
                 child: child ?? _buildImageContent(),
               ),
             ),
-            const SizedBox(height: 5),
+            const SizedBox(height: 5.0),
             Text(
               title,
               style: const TextStyle(
-                fontSize: 12,
+                fontSize: 12.0,
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.w500,
               ),

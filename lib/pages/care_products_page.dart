@@ -63,11 +63,11 @@ class _CareProductsPageState extends State<CareProductsPage> {
         price: '3095 ₽',
         assetUrl: 'assets/images/product/new_tonic.png',
       ),
-      width: 125,
-      height: 172,
-      top: 6,
+      width: 125.0,
+      height: 172.0,
+      top: 6.0,
       left: 14.84,
-      topShadow: 9,
+      topShadow: 9.0,
       leftShadow: 21.84,
     ),
 
@@ -92,11 +92,11 @@ class _CareProductsPageState extends State<CareProductsPage> {
         price: '3095 ₽',
         assetUrl: 'assets/images/product/new_tonic.png',
       ),
-      width: 125,
-      height: 172,
-      top: 6,
+      width: 125.0,
+      height: 172.0,
+      top: 6.0,
       left: 14.84,
-      topShadow: 9,
+      topShadow: 9.0,
       leftShadow: 21.84,
     ),
   ];
@@ -107,32 +107,32 @@ class _CareProductsPageState extends State<CareProductsPage> {
       currentIndex: 1,
       child: SingleChildScrollView(
         child: Container(
-          margin: EdgeInsets.only(top: 63, left: 16, right: 16),
+          margin: EdgeInsets.only(top: 63.0, left: 16.0, right: 16.0),
           child: Column(
             // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeadersButtonBackTitle(title: ''),
-              SizedBox(height: 4),
+              SizedBox(height: 4.0),
               Row(
                 children: [
                   Text(
                     'Средства \nдля жирной кожи',
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 24.0,
                       fontFamily: 'Raleway',
                       fontWeight: FontWeight.w600,
                     ),
                   ),
                 ],
               ),
-              SizedBox(height: 12),
+              SizedBox(height: 12.0),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     '28 продуктов',
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 16.0,
                       fontFamily: 'Montserrat',
                       fontWeight: FontWeight.w500,
                     ),
@@ -144,13 +144,13 @@ class _CareProductsPageState extends State<CareProductsPage> {
                     ),
                     child: Image.asset(
                       'assets/images/icons/icon_filtered.png',
-                      height: 20,
+                      height: 20.0,
                     ),
                   ),
                 ],
               ),
               Padding(
-                padding: EdgeInsets.only(top: 218 - 175 - 27),
+                padding: EdgeInsets.only(top: 16.0),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
                   child: Row(
@@ -191,11 +191,11 @@ class _CareProductsPageState extends State<CareProductsPage> {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        margin: EdgeInsets.only(right: 15),
-        width: 105,
-        height: 44,
+        margin: const EdgeInsets.only(right: 15.0),
+        width: 105.0,
+        height: 44.0,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(11),
+          borderRadius: BorderRadius.circular(11.0),
           color: isActive ? Color(0xff171717) : Color(0xffF4F4F4),
         ),
         child: Center(
@@ -203,7 +203,7 @@ class _CareProductsPageState extends State<CareProductsPage> {
             title,
             style: TextStyle(
               fontFamily: 'Raleway',
-              fontSize: 14,
+              fontSize: 14.0,
               fontWeight: FontWeight.w500,
               color: isActive ? Color(0xffFFFFFF) : Color(0xff000000),
             ),
@@ -215,13 +215,13 @@ class _CareProductsPageState extends State<CareProductsPage> {
 
   Widget _buildCatalogProducts(List<ProductCard> products) {
     return Padding(
-      padding: EdgeInsets.only(top: 25),
+      padding: const EdgeInsets.only(top: 25.0),
       child: Wrap(
-        spacing: 8,
-        runSpacing: 16,
+        spacing: 8.0,
+        runSpacing: 16.0,
         children: products.map((product) {
           return ConstrainedBox(
-            constraints: BoxConstraints(maxWidth: 160),
+            constraints: BoxConstraints(maxWidth: 160.0),
             child: product,
           );
         }).toList(),

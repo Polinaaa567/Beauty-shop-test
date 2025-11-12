@@ -25,13 +25,13 @@ class CatalogPage extends StatelessWidget {
 
   Widget _buildSearchBar() {
     return Container(
-      margin: const EdgeInsets.only(top: 63, left: 16, right: 16),
-      height: 48,
+      margin: const EdgeInsets.only(top: 63.0, left: 16.0, right: 16.0),
+      height: 48.0,
       decoration: BoxDecoration(
         border: Border(
           bottom: BorderSide(
             color: const Color(0xff000000).withOpacity(0.2),
-            width: 1,
+            width: 1.0,
           ),
         ),
       ),
@@ -40,14 +40,14 @@ class CatalogPage extends StatelessWidget {
           hintStyle: TextStyle(
             fontFamily: 'Raleway',
             color: const Color(0xff000000).withOpacity(0.5),
-            fontSize: 18,
+            fontSize: 18.0,
             fontWeight: FontWeight.w500,
           ),
           border: InputBorder.none,
           icon: Image.asset(
             'assets/images/icons/icon_search.png',
-            width: 20,
-            height: 20,
+            width: 20.0,
+            height: 20.0,
           ),
           hintText: 'Поиск',
         ),
@@ -58,7 +58,7 @@ class CatalogPage extends StatelessWidget {
   Widget _buildMenuSection(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.5,
-      margin: EdgeInsets.only(top: 39, left: 16),
+      margin: EdgeInsets.only(top: 39.0, left: 16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -93,7 +93,7 @@ class CatalogPage extends StatelessWidget {
               Text(
                 title,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 20.0,
                   fontFamily: 'Raleway',
                   fontWeight: FontWeight.w600,
                 ),
@@ -105,11 +105,11 @@ class CatalogPage extends StatelessWidget {
 
               if (hasDecoration)
                 Padding(
-                  padding: EdgeInsets.only(left: 5),
+                  padding: EdgeInsets.only(left: 5.0),
                   child: Image.asset(
                     'assets/images/icons/icon_star_pink.png',
-                    width: 25,
-                    height: 25,
+                    width: 25.0,
+                    height: 25.0,
                   ),
                 ),
             ],

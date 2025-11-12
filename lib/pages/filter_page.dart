@@ -195,7 +195,7 @@ class _FiltersScreenState extends State<FiltersScreen> {
                       ),
                     ),
                     trailing: option == currentValue
-                        ? Icon(Icons.check, color: Colors.black, weight: 5)
+                        ? Icon(Icons.check, color: Colors.black, weight: 5.0)
                         : null,
                     onTap: () {
                       onValueSelected(option);

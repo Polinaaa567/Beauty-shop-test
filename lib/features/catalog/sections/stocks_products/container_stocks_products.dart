@@ -20,7 +20,7 @@ class SpecialOffersSection extends StatelessWidget {
 
   Widget _buildTitleCatalog() {
     return const Padding(
-      padding: EdgeInsets.only(top: 15, left: 16),
+      padding: EdgeInsets.only(top: 15.0, left: 16.0),
       child: SectionHeaderTitle(
         title: 'Акции',
         colors: [Color(0xffFFC0E1), Color(0xffF02980)],
@@ -30,7 +30,7 @@ class SpecialOffersSection extends StatelessWidget {
 
   Widget _buildRowItemsCatalog() {
     return Padding(
-      padding: const EdgeInsets.only(left: 15, top: 575 - 40 - 511),
+      padding: const EdgeInsets.only(left: 15.0, top: 575.0 - 40.0 - 511.0),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
@@ -58,11 +58,11 @@ class SpecialOffersSection extends StatelessWidget {
                 assetUrl: 'assets/images/product/stock_cream.png',
                 stock: '1595 ₽',
               ),
-              width: 111,
-              height: 151,
-              top: 19,
+              width: 111.0,
+              height: 151.0,
+              top: 19.0,
               left: 25.68,
-              topShadow: 25,
+              topShadow: 25.0,
               leftShadow: 30.68,
               decoration: '1+1',
             ),
@@ -74,11 +74,11 @@ class SpecialOffersSection extends StatelessWidget {
                 assetUrl: 'assets/images/product/stock_toner.png',
                 stock: '3095 ₽',
               ),
-              width: 125,
-              height: 172,
-              top: 6,
+              width: 125.0,
+              height: 172.0,
+              top: 6.0,
               left: 14.84,
-              topShadow: 9,
+              topShadow: 9.0,
               leftShadow: 21.84,
             ),
           ],

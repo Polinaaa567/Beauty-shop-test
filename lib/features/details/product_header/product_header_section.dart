@@ -1,6 +1,6 @@
 import 'package:beauty_store/core/entities/headers_info.dart';
-import 'package:beauty_store/features/details/product_header/product_image_slider.dart';
-import 'package:beauty_store/features/details/product_header/product_info_header_section.dart';
+import 'package:beauty_store/features/details/product_header/widgets/product_image_slider.dart';
+import 'package:beauty_store/features/details/product_header/widgets/product_info_header_section.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,7 +14,7 @@ class ProductHeaderSection extends StatefulWidget {
 class _ProductHeaderSectionState extends State<ProductHeaderSection> {
   final List<HeadersInfo> info = [
     HeadersInfo(
-      heightAsset: 465,
+      heightAsset: 465.0,
       assetUrl: 'assets/images/headers/cream1.png',
       title: 'Скидка -15%',
       description: 'HA EYE & NECK SERUM',
@@ -22,7 +22,7 @@ class _ProductHeaderSectionState extends State<ProductHeaderSection> {
       buttonText: 'Перейти к акции',
     ),
     HeadersInfo(
-      heightAsset: 483,
+      heightAsset: 483.0,
       assetUrl: 'assets/images/headers/headers2.png',
       title: '5 средств',
       type: 'для ухода за сухой ',
@@ -30,7 +30,7 @@ class _ProductHeaderSectionState extends State<ProductHeaderSection> {
       buttonText: 'К разделу',
     ),
     HeadersInfo(
-      heightAsset: 610,
+      heightAsset: 610.0,
       assetUrl: 'assets/images/headers/headers3.png',
       title: 'Мужской уход',
       type: 'Для чувствительной',
@@ -50,8 +50,8 @@ class _ProductHeaderSectionState extends State<ProductHeaderSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color.fromARGB(1, 255, 255, 255),
-      height: 359,
+      color: const Color.fromARGB(1, 255, 255, 255),
+      height: 359.0,
       child: Stack(
         children: [
           PageViewCustom(
