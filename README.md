@@ -18,6 +18,7 @@ Beauty Store - мобильное приложение для онлайн-ма�
 <h2 align="center">Интерфейс</h2>
 
 <h3 align="center">Web версия</h3>
+
 <img width="638" height="310" alt="image" src="https://github.com/user-attachments/assets/da62a79b-d78c-437b-8d88-0895c9ea2e0f" text=Хиты+продаж" alt="Главная страница"/>
 <img width="638" height="310" alt="image" src="https://github.com/user-attachments/assets/a3bc5b75-2a2b-48ee-9472-6f09863ee318"  text=Меню+каталога" alt="Каталог"/>
 <img width="638" height="310" alt="image" src="https://github.com/user-attachments/assets/3e4b996d-b2bd-4d1e-9344-db2834f404a9"  text=По+типу+кожи" alt="Каталог"/>
@@ -26,6 +27,7 @@ Beauty Store - мобильное приложение для онлайн-ма�
 <img width="638" height="310" alt="image" src="https://github.com/user-attachments/assets/37352514-6f24-426a-aa4d-866bdd35a98b" text=Фильтры" alt="Фильтры/>
 
 <h3 align="center">Android версия</h3>
+
 <img width="275" height="485" alt="image" src="https://github.com/user-attachments/assets/d4b01fa1-6692-41ec-b25a-570a8603c51f" text=Главная+страница" alt="Главная страница"/>
 <img width="275" height="485" alt="image" src="https://github.com/user-attachments/assets/98b2ff9a-59b0-42ed-b5ae-152582cabb14" text=Товары+по+акции" alt="Главная страница"/>
 <img width="275" height="485" alt="image" src="https://github.com/user-attachments/assets/f6333f86-5614-4ce0-8fa2-8269cc3c507e" text=Меню+каталога" alt="Каталог"/>
