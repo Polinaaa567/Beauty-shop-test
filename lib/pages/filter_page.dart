@@ -1,4 +1,4 @@
-import 'package:beauty_store/features/filters/widgets/filter_item.dart';
+import 'package:beauty_store/shared/widgets/filter_item.dart';
 import 'package:beauty_store/shared/widgets/headers_button_back_title.dart';
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,6 @@
 import 'package:beauty_store/core/entities/headers_info.dart';
-import 'package:beauty_store/features/details/product_header/widgets/product_image_slider.dart';
-import 'package:beauty_store/features/details/product_header/widgets/product_info_header_section.dart';
+import 'package:beauty_store/features/catalog/product_header/widgets/product_image_slider.dart';
+import 'package:beauty_store/features/catalog/product_header/widgets/product_info_header_section.dart';
 
 import 'package:flutter/material.dart';
 

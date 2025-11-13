@@ -3,8 +3,8 @@ import 'package:beauty_store/features/catalog/categories/category_horizontal_lis
 import 'package:beauty_store/features/catalog/sections/hits_products/container_hits_products.dart';
 import 'package:beauty_store/features/catalog/sections/new_products/container_new_products.dart';
 import 'package:beauty_store/features/catalog/sections/stocks_products/container_stocks_products.dart';
-import 'package:beauty_store/features/details/product_filter/product_filter.dart';
-import 'package:beauty_store/features/details/product_header/product_header_section.dart';
+import 'package:beauty_store/features/catalog/product_filter/product_filter.dart';
+import 'package:beauty_store/features/catalog/product_header/widgets/product_header_section.dart';
 import 'package:beauty_store/features/personal_care/widgets/personal_care_survey.dart';
 
 import 'package:flutter/material.dart';

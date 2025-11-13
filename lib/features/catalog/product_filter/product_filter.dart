@@ -1,4 +1,4 @@
-import 'package:beauty_store/features/details/product_filter/product_filter_card.dart';
+import 'package:beauty_store/features/catalog/product_filter/product_filter_card.dart';
 import 'package:flutter/material.dart';
 
 class ProductFilterRow extends StatelessWidget {

@@ -109,7 +109,6 @@ class _CareProductsPageState extends State<CareProductsPage> {
         child: Container(
           margin: EdgeInsets.only(top: 63.0, left: 16.0, right: 16.0),
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               HeadersButtonBackTitle(title: ''),
               SizedBox(height: 4.0),
